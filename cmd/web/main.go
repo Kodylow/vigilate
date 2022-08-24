@@ -28,6 +28,8 @@ const maxJobMaxWorkers = 5
 func init() {
 	// register gob types
 	gob.Register(models.User{})
+
+	// set timezone
 	_ = os.Setenv("TZ", "America/Los_Angeles")
 }
 
